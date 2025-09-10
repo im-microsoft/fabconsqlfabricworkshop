@@ -52,11 +52,15 @@ Thumbs.db
 .env
 .env.local
 
-# IDE files
-.vscode/
+# IDE files (keep .vscode for workshop consistency)
 .idea/
 *.swp
 *.swo
+
+# VSCode user-specific files (but keep shared settings)
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/*.code-workspace
 
 # Temporary SQL files
 temp_*.sql
