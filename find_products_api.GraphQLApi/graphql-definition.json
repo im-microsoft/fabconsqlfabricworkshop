@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/graphqlApi/definition/1.0.0/schema.json",
+  "datasources": [
+    {
+      "objects": [
+        {
+          "IsStoredProcedureQueryNode": true,
+          "actions": {
+            "Execute": "Enabled"
+          },
+          "fieldMappings": {},
+          "graphqlType": "find_products_api",
+          "relationships": [],
+          "sourceObject": "dbo.find_products_api",
+          "sourceObjectType": "StoredProcedure"
+        }
+      ],
+      "sourceItemId": "f65601e0-85b8-8bce-4d0b-0d7f12a83e84",
+      "sourceType": "SqlDbNative",
+      "sourceWorkspaceId": "00000000-0000-0000-0000-000000000000"
+    }
+  ]
+}

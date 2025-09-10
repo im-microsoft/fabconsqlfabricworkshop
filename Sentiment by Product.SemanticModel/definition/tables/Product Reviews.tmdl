@@ -1,0 +1,70 @@
+table 'Product Reviews'
+	lineageTag: 2ac05eae-8b30-425c-b1ef-494db315e621
+
+	measure Reviews = COUNTROWS('Product Reviews')
+		formatString: 0
+		lineageTag: 21f16da5-be4f-4512-82e7-31974d7b346a
+
+	column ReviewID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 53f5c2d1-df82-457a-a35f-903fbccb9514
+		summarizeBy: none
+		sourceColumn: ReviewID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: d63b7e77-e572-4d45-8f86-78570e336abe
+		summarizeBy: count
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReviewText
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 1b0e56ed-f264-41bc-adce-5862e3a4fe99
+		summarizeBy: none
+		sourceColumn: ReviewText
+
+		annotation SummarizationSetBy = Automatic
+
+	column SentimentLabel
+		dataType: string
+		sourceProviderType: varchar(10)
+		lineageTag: c0280fe6-a527-404b-b517-ca235fefdc3a
+		summarizeBy: none
+		sourceColumn: SentimentLabel
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedAt
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 63d0da53-ef5a-440a-be58-1f438dd21589
+		summarizeBy: none
+		sourceColumn: CreatedAt
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Product Reviews' = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(ServerName, DatabaseName),
+				    dbo_product_reviews = Source{[Schema="dbo",Item="product_reviews"]}[Data]
+				in
+				    dbo_product_reviews
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

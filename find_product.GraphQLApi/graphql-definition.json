@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/graphqlApi/definition/1.0.0/schema.json",
+  "datasources": [
+    {
+      "objects": [
+        {
+          "actions": {
+            "Query": "Enabled",
+            "Query_by_pk": "Enabled",
+            "Create": "Enabled",
+            "Update": "Enabled",
+            "Delete": "Enabled"
+          },
+          "fieldMappings": {
+            "Color": "Color",
+            "DiscontinuedDate": "DiscontinuedDate",
+            "ListPrice": "ListPrice",
+            "ModifiedDate": "ModifiedDate",
+            "Name": "Name",
+            "ProductCategoryID": "ProductCategoryID",
+            "ProductID": "ProductID",
+            "ProductModelID": "ProductModelID",
+            "ProductNumber": "ProductNumber",
+            "rowguid": "rowguid",
+            "SellEndDate": "SellEndDate",
+            "SellStartDate": "SellStartDate",
+            "Size": "Size",
+            "StandardCost": "StandardCost",
+            "ThumbNailPhoto": "ThumbNailPhoto",
+            "ThumbnailPhotoFileName": "ThumbnailPhotoFileName",
+            "Weight": "Weight"
+          },
+          "graphqlType": "Product",
+          "relationships": [],
+          "sourceObject": "SalesLT.Product",
+          "sourceObjectType": "Table"
+        }
+      ],
+      "sourceItemId": "f65601e0-85b8-8bce-4d0b-0d7f12a83e84",
+      "sourceType": "SqlDbNative",
+      "sourceWorkspaceId": "00000000-0000-0000-0000-000000000000"
+    }
+  ]
+}

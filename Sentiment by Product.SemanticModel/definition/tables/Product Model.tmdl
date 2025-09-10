@@ -1,0 +1,57 @@
+table 'Product Model'
+	lineageTag: b36847d1-3fbe-4b1a-aae3-f1bd81f47548
+
+	column ProductModelID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 26064a77-2455-4d40-a65a-8fdf306e1075
+		summarizeBy: none
+		sourceColumn: ProductModelID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		sourceProviderType: nvarchar(50)
+		lineageTag: 80137472-ccac-4bab-911f-b28bcba07a93
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		isNullable: false
+		sourceProviderType: uniqueidentifier
+		lineageTag: 7a8656a0-2f5c-4806-98cc-de0c13b2e02d
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		isNullable: false
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 3e2f4378-6992-4e1d-b4c4-d0d71c3415fa
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Product Model' = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(ServerName, DatabaseName),
+				    SalesLT_ProductModel = Source{[Schema="SalesLT",Item="ProductModel"]}[Data]
+				in
+				    SalesLT_ProductModel
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

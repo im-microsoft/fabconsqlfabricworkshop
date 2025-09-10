@@ -1,0 +1,29 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/userDataFunction/definition/1.1.0/schema.json",
+  "runtime": "PYTHON",
+  "connectedDataSources": [
+    {
+      "alias": "Fabcondatabase",
+      "artifactId": "f65601e0-85b8-8bce-4d0b-0d7f12a83e84",
+      "artifactType": "SqlDbNative",
+      "workspaceId": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "functions": [
+    {
+      "name": "write_emp_info_on_product_Review",
+      "description": "",
+      "isPublicEndpointEnabled": true
+    }
+  ],
+  "libraries": {
+    "public": [
+      {
+        "name": "fabric-user-data-functions",
+        "type": "PYPI",
+        "version": "1.0.28"
+      }
+    ],
+    "private": []
+  }
+}

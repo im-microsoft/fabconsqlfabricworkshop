@@ -1,0 +1,49 @@
+table 'Assigned Products'
+	lineageTag: 5181c52f-fade-44b7-a65d-f1b86765babc
+
+	column Emp_Assigned_Pdct_ID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 10f20840-012f-4ce5-811b-d5cfb9787a65
+		summarizeBy: count
+		sourceColumn: Emp_Assigned_Pdct_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_ID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ff7d85c8-2631-411f-81a6-6d6b143d9894
+		summarizeBy: none
+		sourceColumn: employee_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f32359c4-2f35-42d3-bdcb-c7fa1e061873
+		summarizeBy: count
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Assigned Products' = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(ServerName, DatabaseName),
+				    dbo_Employee_Assigned_Products = Source{[Schema="dbo",Item="Employee_Assigned_Products"]}[Data]
+				in
+				    dbo_Employee_Assigned_Products
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

@@ -1,0 +1,166 @@
+table Customer
+	lineageTag: d9325d35-efd1-4722-98a3-6e57ec315823
+	sourceLineageTag: [SalesLT].[Customer]
+
+	column CustomerID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2a5f9606-1675-44a2-8062-5c1e8f84e170
+		sourceLineageTag: CustomerID
+		summarizeBy: count
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameStyle
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		lineageTag: cff74b84-3fd6-4dd3-bbab-8e10d3833088
+		sourceLineageTag: NameStyle
+		summarizeBy: none
+		sourceColumn: NameStyle
+
+		annotation SummarizationSetBy = Automatic
+
+	column Title
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 52727136-b78d-4a82-a542-0a606bdcb7ee
+		sourceLineageTag: Title
+		summarizeBy: none
+		sourceColumn: Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: da4274ba-b328-4482-aee4-952d7247224d
+		sourceLineageTag: FirstName
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MiddleName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4bbf3c2b-3306-4409-99eb-b51a2950cf74
+		sourceLineageTag: MiddleName
+		summarizeBy: none
+		sourceColumn: MiddleName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5978b666-df52-4be4-b8a2-65091fc2f8ce
+		sourceLineageTag: LastName
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Suffix
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5d5274d7-44f8-4556-8304-54950537b18e
+		sourceLineageTag: Suffix
+		summarizeBy: none
+		sourceColumn: Suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column CompanyName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7c1dc8b0-b77e-4301-b649-7e2b90a43ea2
+		sourceLineageTag: CompanyName
+		summarizeBy: none
+		sourceColumn: CompanyName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesPerson
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b11c429b-45e7-49d3-ab1a-4587ca60e8c9
+		sourceLineageTag: SalesPerson
+		summarizeBy: none
+		sourceColumn: SalesPerson
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmailAddress
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 93826072-cec6-44e9-a18e-40e973507bd6
+		sourceLineageTag: EmailAddress
+		summarizeBy: none
+		sourceColumn: EmailAddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4fd815e4-5ddb-44fc-8460-969deac2ef91
+		sourceLineageTag: Phone
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column PasswordHash
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 103d58b9-0478-44ce-a48a-739278af3cd1
+		sourceLineageTag: PasswordHash
+		summarizeBy: none
+		sourceColumn: PasswordHash
+
+		annotation SummarizationSetBy = Automatic
+
+	column PasswordSalt
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6096508b-ed10-47cf-b25a-409cba5f9e27
+		sourceLineageTag: PasswordSalt
+		summarizeBy: none
+		sourceColumn: PasswordSalt
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7ab2fef7-6ca2-4d7c-8a3d-4183f6be07dc
+		sourceLineageTag: rowguid
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 5f222225-f5d2-4033-b68c-d6e8cfffc7c4
+		sourceLineageTag: ModifiedDate
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Customer = entity
+		mode: directLake
+		source
+			entityName: Customer
+			schemaName: SalesLT
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

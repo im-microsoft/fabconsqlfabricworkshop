@@ -1,0 +1,252 @@
+{
+  "config": "{\"version\":\"5.66\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"type\":2,\"version\":{\"visual\":\"1.8.95\",\"report\":\"2.0.95\",\"page\":\"1.3.95\"}}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Product Reviews Sentiment",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "116d8af55a076d656c5f",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"53360351ef57e33a0c50\",\"layouts\":[{\"id\":0,\"position\":{\"x\":60,\"y\":6,\"height\":40,\"width\":300,\"tabOrder\":4000,\"z\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Product Reviews Sentiment\",\"textStyle\":{\"fontFamily\":\"Segoe UI\",\"fontSize\":\"14pt\",\"fontWeight\":\"bold\"}}]}]}}]},\"vcObjects\":{}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 300.00,
+          "x": 60.00,
+          "y": 6.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5974b7a0df095450b99f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":10,\"height\":28,\"width\":28,\"tabOrder\":5000,\"z\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAnIGhlaWdodD0nMjAnIHZpZXdCb3g9JzAgMCAyMCAyMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMTIgNC41QzEyIDMuNjcxNTcgMTEuMzI4NCAzIDEwLjUgM0g5LjVDOC42NzE1NyAzIDggMy42NzE1NyA4IDQuNVYxN0gxMlY0LjVaTTEzIDZWMTdIMTYuNUMxNi43NzYxIDE3IDE3IDE2Ljc3NjEgMTcgMTYuNVY4QzE3IDYuODk1NDMgMTYuMTA0NiA2IDE1IDZIMTNaTTUgOUg3VjE3SDMuNUMzLjIyMzg2IDE3IDMgMTYuNzc2MSAzIDE2LjVWMTFDMyA5Ljg5NTQzIDMuODk1NDMgOSA1IDlaJyBmaWxsPSd3aGl0ZScvPjwvc3ZnPgo='\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 28.00,
+          "width": 28.00,
+          "x": 20.00,
+          "y": 10.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"5ac54a9726f0d13da408\",\"layouts\":[{\"id\":0,\"position\":{\"x\":60.47244094488189,\"y\":71.55905511811024,\"z\":3000,\"width\":274.1417322834646,\"height\":84.66141732283465,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"CountNonNull(Product Reviews.ReviewID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product Reviews\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ReviewID\"}},\"Function\":5},\"Name\":\"CountNonNull(Product Reviews.ReviewID)\",\"NativeReferenceName\":\"Count of ReviewID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ReviewID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"accentBar\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"metadata\":\"CountNonNull(Product Reviews.ReviewID)\"}}],\"layout\":[{\"properties\":{\"maxTiles\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}},\"cellPadding\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"label\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"CountNonNull(Product Reviews.ReviewID)\"}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Reviews'\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 84.66,
+          "width": 274.14,
+          "x": 60.47,
+          "y": 71.56,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"5d438467dc8e0594518d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":61.560798548094375,\"y\":163.77495462794917,\"z\":1000,\"width\":643.4845735027224,\"height\":239.27404718693285,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Products.Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Product Reviews.ReviewID)\"}],\"Series\":[{\"queryRef\":\"Product Reviews.SentimentLabel\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Products\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"Product Reviews\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Name\"},\"Name\":\"Products.Name\",\"NativeReferenceName\":\"Name\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"ReviewID\"}},\"Function\":5},\"Name\":\"CountNonNull(Product Reviews.ReviewID)\",\"NativeReferenceName\":\"Count of ReviewID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"SentimentLabel\"},\"Name\":\"Product Reviews.SentimentLabel\",\"NativeReferenceName\":\"SentimentLabel\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"ReviewID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Product Reviews'\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 239.27,
+          "width": 643.48,
+          "x": 61.56,
+          "y": 163.77,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"6d9a849722891cf3308a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":348.7244094488189,\"y\":71.55905511811024,\"z\":7000,\"width\":274.1417322834646,\"height\":84.66141732283465,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Product Review Feedback.Responded\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p1\",\"Entity\":\"Product Review Feedback\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"Responded\"},\"Name\":\"Product Review Feedback.Responded\",\"NativeReferenceName\":\"Responded\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"Responded\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"layout\":[{\"properties\":{\"maxTiles\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}},\"cellPadding\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"label\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}},\"selector\":{\"metadata\":\"Product Review Feedback.Responded\"}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Reviews Responded '\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 84.66,
+          "width": 274.14,
+          "x": 348.72,
+          "y": 71.56,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"7f367c83c6ad2ba6eb2b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":60.39927404718693,\"y\":382.1415607985481,\"z\":2000,\"width\":1211.4700544464608,\"height\":338.00362976406535,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Products.Name\"},{\"queryRef\":\"Product Reviews.SentimentLabel\"},{\"queryRef\":\"Product Review Feedback.Employee Responded Reviews\"},{\"queryRef\":\"Product Reviews.ReviewText\"},{\"queryRef\":\"Product Review Feedback.employee_comments\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Products\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"Product Reviews\",\"Type\":0},{\"Name\":\"p2\",\"Entity\":\"Product Review Feedback\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Name\"},\"Name\":\"Products.Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"SentimentLabel\"},\"Name\":\"Product Reviews.SentimentLabel\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p2\"}},\"Property\":\"Responded\"},\"Name\":\"Product Review Feedback.Employee Responded Reviews\",\"NativeReferenceName\":\"Responded\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p2\"}},\"Property\":\"employee_comments\"},\"Name\":\"Product Review Feedback.employee_comments\",\"NativeReferenceName\":\"employee_comments\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"ReviewText\"},\"Name\":\"Product Reviews.ReviewText\",\"NativeReferenceName\":\"ReviewText\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Name\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Product Reviews Sentiment'\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 338.00,
+          "width": 1211.47,
+          "x": 60.40,
+          "y": 382.14,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8877c508b0e3bdab0afe\",\"layouts\":[{\"id\":0,\"position\":{\"x\":705.0453720508167,\"y\":163.77495462794917,\"z\":6000,\"width\":574.9546279491833,\"height\":239.27404718693285,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Product Reviews.Reviews\"}],\"Series\":[{\"queryRef\":\"Product Reviews.SentimentLabel\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product Reviews\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Reviews\"},\"Name\":\"Product Reviews.Reviews\",\"NativeReferenceName\":\"Reviews1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"SentimentLabel\"},\"Name\":\"Product Reviews.SentimentLabel\",\"NativeReferenceName\":\"SentimentLabel\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Reviews\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 239.27,
+          "width": 574.95,
+          "x": 705.05,
+          "y": 163.77,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"f5dc14d8d245414da9f7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"height\":48,\"width\":1280,\"tabOrder\":1000,\"z\":0}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#A6ADC6'\"}}}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"85L\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E0E0E0'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Employee Product Ownership",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "95eee6190be6f8d348af",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"008c363680c526b66c42\",\"layouts\":[{\"id\":0,\"position\":{\"height\":32,\"width\":88,\"x\":1012,\"y\":10,\"tabOrder\":7000,\"z\":7000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"First Name\",\"textStyle\":{\"fontSize\":\"10pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 32.00,
+          "width": 88.00,
+          "x": 1012.00,
+          "y": 10.00,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"0969fcf7fe76534f6599\",\"layouts\":[{\"id\":0,\"position\":{\"x\":60,\"y\":6,\"height\":40,\"width\":312,\"tabOrder\":9000,\"z\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Employee Product Ownership\",\"textStyle\":{\"fontFamily\":\"Segoe UI\",\"fontSize\":\"14pt\",\"fontWeight\":\"bold\"}}]}]}}]},\"vcObjects\":{}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 312.00,
+          "x": 60.00,
+          "y": 6.00,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"0a63360b28b3a508093e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":777.059891107078,\"y\":326.3883847549909,\"z\":11000,\"width\":495.9709618874773,\"height\":393.75680580762247,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Product Reviews.Reviews\"}],\"Series\":[{\"queryRef\":\"Product Reviews.SentimentLabel\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product Reviews\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Reviews\"},\"Name\":\"Product Reviews.Reviews\",\"NativeReferenceName\":\"Reviews\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"SentimentLabel\"},\"Name\":\"Product Reviews.SentimentLabel\",\"NativeReferenceName\":\"SentimentLabel\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Reviews\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 393.76,
+          "width": 495.97,
+          "x": 777.06,
+          "y": 326.39,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"0fcb29f680907d46673f\",\"layouts\":[{\"id\":0,\"position\":{\"height\":32,\"width\":78,\"x\":758,\"y\":10,\"tabOrder\":5000,\"z\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Last Name\",\"textStyle\":{\"fontSize\":\"10pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 32.00,
+          "width": 78.00,
+          "x": 758.00,
+          "y": 10.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"1296157fdf99d2b55459\",\"layouts\":[{\"id\":0,\"position\":{\"height\":36,\"width\":160,\"x\":582,\"y\":6,\"tabOrder\":4000,\"z\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product Reviews.SentimentLabel\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product Reviews\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"SentimentLabel\"},\"Name\":\"Product Reviews.SentimentLabel\",\"NativeReferenceName\":\"SentimentLabel\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9L\"}}}}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 36.00,
+          "width": 160.00,
+          "x": 582.00,
+          "y": 6.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"164f8d9080095c345451\",\"layouts\":[{\"id\":0,\"position\":{\"x\":60.47244094488189,\"y\":172.3464566929134,\"z\":1000,\"width\":1212.4724409448818,\"height\":154.20472440944883,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Products.Name\"},{\"queryRef\":\"Product Reviews.ReviewText\"},{\"queryRef\":\"Product Reviews.SentimentLabel\"},{\"queryRef\":\"Product Reviews.ReviewID\"},{\"queryRef\":\"Products.ProductID\"},{\"queryRef\":\"Employees.employee_ID\"},{\"queryRef\":\"Product Review Feedback.Responded\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Products\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"Product Reviews\",\"Type\":0},{\"Name\":\"e\",\"Entity\":\"Employees\",\"Type\":0},{\"Name\":\"p2\",\"Entity\":\"Product Review Feedback\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Name\"},\"Name\":\"Products.Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"ReviewText\"},\"Name\":\"Product Reviews.ReviewText\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"ProductID\"},\"Name\":\"Products.ProductID\",\"NativeReferenceName\":\"ProductID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"ReviewID\"},\"Name\":\"Product Reviews.ReviewID\",\"NativeReferenceName\":\"ReviewID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"employee_ID\"},\"Name\":\"Employees.employee_ID\",\"NativeReferenceName\":\"employee_ID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"SentimentLabel\"},\"Name\":\"Product Reviews.SentimentLabel\",\"NativeReferenceName\":\"SentimentLabel\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p2\"}},\"Property\":\"Responded\"},\"Name\":\"Product Review Feedback.Responded\",\"NativeReferenceName\":\"Responded\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Name\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"213.50393700787401D\"}}}},\"selector\":{\"metadata\":\"Products.Name\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"408.496062992126D\"}}}},\"selector\":{\"metadata\":\"Product Reviews.ReviewText\"}}],\"total\":[{\"properties\":{\"totals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Products Owned by Employee'\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 154.20,
+          "width": 1212.47,
+          "x": 60.47,
+          "y": 172.35,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"25384b33804bc9d07bf9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":349.61887477313974,\"y\":651.6152450090744,\"z\":13000,\"width\":116.1524500907441,\"height\":53.43012704174229,\"tabOrder\":13000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"lineTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"lineWeight\":{\"expr\":{\"Literal\":{\"Value\":\"19L\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"selected\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Submit'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"17D\"}}},\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"fontColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}},\"selector\":{\"id\":\"selected\"}}],\"shape\":[{\"properties\":{\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"51L\"}}}},\"selector\":{\"id\":\"default\"}},{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}}},\"selector\":{\"id\":\"selected\"}}],\"shadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"glow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'DataFunction'\"}}},\"dataFunction\":{\"kind\":\"ItemLocation\",\"byReference\":{\"itemId\":{\"expr\":{\"Literal\":{\"Value\":\"'ec9acc70-8841-44e5-b855-39db8874d194'\"}}},\"workspaceId\":{\"expr\":{\"Literal\":{\"Value\":\"'c497b167-cc05-4e0d-bc94-4bb0b123b1de'\"}}}},\"metadata\":{\"dataFunction\":{\"name\":\"write_emp_info_on_product_Review\",\"autoRefresh\":true,\"parameters\":[{\"name\":\"productid\",\"dataType\":\"number\",\"isOptional\":false,\"type\":\"ValueParameter\",\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Products\"}},\"Property\":\"ProductID\"}},\"Function\":4}}}},{\"name\":\"ReviewID\",\"dataType\":\"number\",\"isOptional\":false,\"type\":\"ValueParameter\",\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Product Reviews\"}},\"Property\":\"ReviewID\"}},\"Function\":4}}}},{\"name\":\"EmployeeID\",\"dataType\":\"number\",\"isOptional\":false,\"type\":\"ValueParameter\",\"value\":{\"expr\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Employees\"}},\"Property\":\"employee_ID\"}},\"Function\":4}}}},{\"name\":\"employeeComments\",\"dataType\":\"string\",\"isOptional\":false,\"type\":\"SlicerParameter\",\"slicer\":\"26c046f123830484153a\",\"autoClear\":false}]}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":0}}}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 53.43,
+          "width": 116.15,
+          "x": 349.62,
+          "y": 651.62,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"26c046f123830484153a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.62250453720508,\"y\":446.02540834845735,\"z\":12000,\"width\":718.983666061706,\"height\":205.58983666061707,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"textSlicer\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Internal Product Owner Comments'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 205.59,
+          "width": 718.98,
+          "x": 47.62,
+          "y": 446.03,
+          "z": 12000.00
+        },
+        {
+          "config": "{\"name\":\"405d6777d13086affc5c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":47.62250453720508,\"y\":301.99637023593465,\"z\":14000,\"width\":718.983666061706,\"height\":144.02903811252267,\"tabOrder\":14000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Product Reviews.ReviewID\"},{\"queryRef\":\"Product Review Feedback.employee_comments\"},{\"queryRef\":\"Product Reviews.SentimentLabel\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product Review Feedback\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"Product Reviews\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"employee_comments\"},\"Name\":\"Product Review Feedback.employee_comments\",\"NativeReferenceName\":\"employee_comments\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"ReviewID\"},\"Name\":\"Product Reviews.ReviewID\",\"NativeReferenceName\":\"ReviewID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"SentimentLabel\"},\"Name\":\"Product Reviews.SentimentLabel\",\"NativeReferenceName\":\"SentimentLabel\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"employee_comments\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 144.03,
+          "width": 718.98,
+          "x": 47.62,
+          "y": 302.00,
+          "z": 14000.00
+        },
+        {
+          "config": "{\"name\":\"7b25b59e06f693d331a3\",\"layouts\":[{\"id\":0,\"position\":{\"height\":36,\"width\":160,\"x\":836,\"y\":6,\"tabOrder\":6000,\"z\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Employees.LastName\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employees\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"LastName\"},\"Name\":\"Employees.LastName\",\"NativeReferenceName\":\"LastName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}},\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9L\"}}}}}],\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 36.00,
+          "width": 160.00,
+          "x": 836.00,
+          "y": 6.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"87789bd53509393c1d43\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"height\":48,\"width\":1280,\"tabOrder\":1000,\"z\":0}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#A6ADC6'\"}}}}},\"preset\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"shadowSpread\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"shadowBlur\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}},\"angle\":{\"expr\":{\"Literal\":{\"Value\":\"90L\"}}},\"shadowDistance\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"85L\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#E0E0E0'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 48.00,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"87ce571f30c0d750d46e\",\"layouts\":[{\"id\":0,\"position\":{\"height\":36,\"width\":160,\"x\":1100,\"y\":6,\"tabOrder\":8000,\"z\":8000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Employees.FirstName\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employees\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"FirstName\"},\"Name\":\"Employees.FirstName\",\"NativeReferenceName\":\"FirstName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"selection\":[{\"properties\":{\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9L\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"Employees\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"FirstName\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Amy'\"}}]]}}}]}}}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 36.00,
+          "width": 160.00,
+          "x": 1100.00,
+          "y": 6.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"9951335f73218f843e52\",\"layouts\":[{\"id\":0,\"position\":{\"height\":32,\"width\":138,\"x\":444,\"y\":10,\"tabOrder\":3000,\"z\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Sentiment Label\",\"textStyle\":{\"fontSize\":\"10pt\"}}],\"horizontalTextAlignment\":\"right\"}]}}]},\"vcObjects\":{}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 32.00,
+          "width": 138.00,
+          "x": 444.00,
+          "y": 10.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"a21ddbc734f044d23216\",\"layouts\":[{\"id\":0,\"position\":{\"x\":60.39927404718693,\"y\":72.01451905626134,\"z\":2000,\"width\":936.1887477313975,\"height\":99.89110707803992,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"CountNonNull(Assigned Products.ProductID)\"},{\"queryRef\":\"Product Reviews.Reviews\"},{\"queryRef\":\"Product Review Feedback.Responded\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"Assigned Products\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"Product Reviews\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"Product Review Feedback\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductID\"}},\"Function\":5},\"Name\":\"CountNonNull(Assigned Products.ProductID)\",\"NativeReferenceName\":\"Count of ProductID\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Reviews\"},\"Name\":\"Product Reviews.Reviews\",\"NativeReferenceName\":\"Reviews\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"Responded\"},\"Name\":\"Product Review Feedback.Responded\",\"NativeReferenceName\":\"Responded\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"ProductID\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"accentBar\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}},\"selector\":{\"metadata\":\"CountNonNull(Assigned Products.ProductID)\"}}],\"layout\":[{\"properties\":{\"maxTiles\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}},\"cellPadding\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"label\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}},\"selector\":{\"id\":\"default\"}}],\"spacing\":[{\"properties\":{\"verticalSpacing\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}},\"selector\":{\"id\":\"default\"}}],\"value\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20L\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Segoe UI Semibold'\"}}}},\"selector\":{\"id\":\"default\"}}],\"padding\":[{\"properties\":{\"paddingSelection\":{\"expr\":{\"Literal\":{\"Value\":\"'Custom'\"}}},\"topMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"leftMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"rightMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}},\"bottomMargin\":{\"expr\":{\"Literal\":{\"Value\":\"12L\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Total Products Owned'\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 99.89,
+          "width": 936.19,
+          "x": 60.40,
+          "y": 72.01,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d0cfadac4e91f67b3e2c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":20,\"y\":10,\"height\":28,\"width\":28,\"tabOrder\":10000,\"z\":10000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAnIGhlaWdodD0nMjAnIHZpZXdCb3g9JzAgMCAyMCAyMCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMTIgNC41QzEyIDMuNjcxNTcgMTEuMzI4NCAzIDEwLjUgM0g5LjVDOC42NzE1NyAzIDggMy42NzE1NyA4IDQuNVYxN0gxMlY0LjVaTTEzIDZWMTdIMTYuNUMxNi43NzYxIDE3IDE3IDE2Ljc3NjEgMTcgMTYuNVY4QzE3IDYuODk1NDMgMTYuMTA0NiA2IDE1IDZIMTNaTTUgOUg3VjE3SDMuNUMzLjIyMzg2IDE3IDMgMTYuNzc2MSAzIDE2LjVWMTFDMyA5Ljg5NTQzIDMuODk1NDMgOSA1IDlaJyBmaWxsPSd3aGl0ZScvPjwvc3ZnPgo='\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#118DFF'\"}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"4L\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"3L\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"5L\"}}}}}]}},\"howCreated\":\"Copilot\"}",
+          "filters": "[]",
+          "height": 28.00,
+          "width": 28.00,
+          "x": 20.00,
+          "y": 10.00,
+          "z": 10000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+table CustomerPII
+	lineageTag: 16cab0fc-66a5-4734-a9b7-2b7ebe8defa0
+	sourceLineageTag: [SalesLT].[CustomerPII]
+
+	column CustomerID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 7e27e777-cb5a-49e9-bfba-d7c9ce056cda
+		sourceLineageTag: CustomerID
+		summarizeBy: count
+		sourceColumn: CustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullName
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a0e227a6-de79-4e71-9ff2-e456a6e7ffa1
+		sourceLineageTag: FullName
+		summarizeBy: none
+		sourceColumn: FullName
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmailAddress
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 96f0fd44-85d1-43f8-8eb8-8d2bf1ba1fa0
+		sourceLineageTag: EmailAddress
+		summarizeBy: none
+		sourceColumn: EmailAddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1b21dd9c-1975-4c91-a6e5-f5482391cbb0
+		sourceLineageTag: Phone
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column MSSQL_System_Uniquifier_286624064
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 784e0fa9-d96f-4e69-b389-53bb44ef8ffa
+		sourceLineageTag: MSSQL_System_Uniquifier_286624064
+		summarizeBy: sum
+		sourceColumn: MSSQL_System_Uniquifier_286624064
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CustomerPII = entity
+		mode: directLake
+		source
+			entityName: CustomerPII
+			schemaName: SalesLT
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,66 @@
+table ProductCategory
+	lineageTag: aaa11fae-9abf-41de-89ee-9d9e0a5a0799
+	sourceLineageTag: [SalesLT].[ProductCategory]
+
+	column ProductCategoryID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: adf4cf30-2c76-4971-8bd3-b32a28c0cbb6
+		sourceLineageTag: ProductCategoryID
+		summarizeBy: count
+		sourceColumn: ProductCategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ParentProductCategoryID
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 895f443b-c159-4de4-830e-081fb794c45e
+		sourceLineageTag: ParentProductCategoryID
+		summarizeBy: count
+		sourceColumn: ParentProductCategoryID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e1aa6167-1bab-482d-a915-95fe17b8ab43
+		sourceLineageTag: Name
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0663a787-cba8-4da0-b1cd-21cade4d1652
+		sourceLineageTag: rowguid
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 668dc7a7-5da7-48d1-b60e-9b482c285aa4
+		sourceLineageTag: ModifiedDate
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ProductCategory = entity
+		mode: directLake
+		source
+			entityName: ProductCategory
+			schemaName: SalesLT
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,55 @@
+table Employees
+	lineageTag: e2feba1b-06ab-4c61-a825-27fdd5861a73
+
+	column employee_ID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 9d4598ea-a14a-44e1-80bf-b0d6f9c027a3
+		summarizeBy: none
+		sourceColumn: employee_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: e7fbbfe0-4f36-4a4a-bf48-a2d3d7215837
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		sourceProviderType: varchar(100)
+		lineageTag: 5e7af5f4-0870-434a-a3ed-b62dd7a90c35
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobTitle
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: 21f6b147-3e60-4f06-91ea-059e95b65a1d
+		summarizeBy: none
+		sourceColumn: JobTitle
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Employees = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(ServerName, DatabaseName),
+				    dbo_employees = Source{[Schema="dbo",Item="employees"]}[Data]
+				in
+				    dbo_employees
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

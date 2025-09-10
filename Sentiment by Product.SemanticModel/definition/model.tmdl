@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Assigned Products","Employees","Product Review Feedback","Product Reviews","Products","Product Model","Product Model Description","Product Description","ServerName","DatabaseName"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.146.1254.0 (25.08)+791a7518fadc83da883d79322a2658aff57c8db3
+
+ref table 'Assigned Products'
+ref table Employees
+ref table 'Product Review Feedback'
+ref table 'Product Reviews'
+ref table Products
+ref table 'Product Model'
+ref table 'Product Model Description'
+ref table 'Product Description'
+
+ref cultureInfo en-US
+

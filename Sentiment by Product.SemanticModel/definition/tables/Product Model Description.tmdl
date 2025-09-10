@@ -1,0 +1,69 @@
+table 'Product Model Description'
+	lineageTag: a5057c00-3d48-442e-888c-a35ef36963ed
+
+	column ProductModelID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 95e58e04-ea05-42c9-87c0-53b0590acfa4
+		summarizeBy: none
+		sourceColumn: ProductModelID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductDescriptionID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: befd1678-d557-482e-b8ae-746682e1beb2
+		summarizeBy: none
+		sourceColumn: ProductDescriptionID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Culture
+		dataType: string
+		isNullable: false
+		sourceProviderType: nchar
+		lineageTag: 4478690c-0f26-4e83-8676-6d0cc57060cb
+		summarizeBy: none
+		sourceColumn: Culture
+
+		annotation SummarizationSetBy = Automatic
+
+	column rowguid
+		dataType: string
+		isNullable: false
+		sourceProviderType: uniqueidentifier
+		lineageTag: ffefcb32-df5d-479e-af20-b7128f7646ae
+		summarizeBy: none
+		sourceColumn: rowguid
+
+		annotation SummarizationSetBy = Automatic
+
+	column ModifiedDate
+		dataType: dateTime
+		isNullable: false
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 746a6446-60f5-4dc9-b04a-bd1ab6bbac4d
+		summarizeBy: none
+		sourceColumn: ModifiedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Product Model Description' = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(ServerName, DatabaseName),
+				    SalesLT_ProductModelProductDescription = Source{[Schema="SalesLT",Item="ProductModelProductDescription"]}[Data]
+				in
+				    SalesLT_ProductModelProductDescription
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

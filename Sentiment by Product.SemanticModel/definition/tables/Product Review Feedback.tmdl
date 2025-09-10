@@ -1,0 +1,99 @@
+table 'Product Review Feedback'
+	lineageTag: 395cf3f4-6e7f-4c52-9888-300317b73d79
+
+	measure Responded =
+			
+			SUMX(
+			    'Product Review Feedback',
+			    IF(
+			        NOT(ISBLANK('Product Review Feedback'[employee_comments])),
+			        1,
+			        0
+			    )
+			)
+		lineageTag: 22a06ef8-a764-44a4-8792-409caf4d8e62
+
+	column ProductID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 293bdab7-df85-4b15-8706-a9e40148a315
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReviewID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0be40964-51f1-4afc-91cc-c5dfd7d00ded
+		summarizeBy: none
+		sourceColumn: ReviewID
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_ID
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b9b045d0-59e1-4ca6-ac7c-a40eedc483a8
+		summarizeBy: none
+		sourceColumn: employee_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_comments
+		dataType: string
+		sourceProviderType: varchar(max)
+		lineageTag: e45f6ae8-c621-4f85-a283-ff0a4ac02156
+		summarizeBy: none
+		sourceColumn: employee_comments
+
+		annotation SummarizationSetBy = Automatic
+
+	column resolution
+		dataType: string
+		sourceProviderType: varchar(max)
+		lineageTag: 91cc16b1-509c-43aa-889a-a258a9a97c7b
+		summarizeBy: none
+		sourceColumn: resolution
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: ad4844f2-3e38-42bc-ae29-534f7dea6b88
+		summarizeBy: none
+		sourceColumn: created_date
+
+		annotation SummarizationSetBy = Automatic
+
+	column updated_date
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime
+		lineageTag: 2c4d4cb4-20ee-4720-ac10-83eaa5d5477a
+		summarizeBy: none
+		sourceColumn: updated_date
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Product Review Feedback' = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Database(ServerName, DatabaseName),
+				    dbo_product_review_feedback = Source{[Schema="dbo",Item="product_review_feedback"]}[Data]
+				in
+				    dbo_product_review_feedback
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
