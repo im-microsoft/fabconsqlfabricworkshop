@@ -1,0 +1,62 @@
+# SQL Server specific files
+*.bak
+*.ldf
+*.mdf
+*.ndf
+
+# Database backup files
+*.sql~
+*.backup
+
+# SQL Server profiler files
+*.trc
+
+# SQL Server Reporting Services files
+*.rss
+
+# SQL Server Analysis Services temp files
+*.tmp
+
+# VS/VSCode SQL projects
+*.sqlproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Local environment variables
+.env
+.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary SQL files
+temp_*.sql
