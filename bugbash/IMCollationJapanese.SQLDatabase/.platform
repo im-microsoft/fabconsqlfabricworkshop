@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SQLDatabase",
+    "displayName": "IMCollationJapanese",
+    "description": "RESTing SQLDatabase."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ce9d85c4-3bda-8986-4128-95a6aee1ad9a"
+  }
+}
