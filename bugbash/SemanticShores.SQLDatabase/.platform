@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SQLDatabase",
+    "displayName": "SemanticShores"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f7ac5b0c-6e51-8ab0-48fd-37293b93acb5"
+  }
+}
