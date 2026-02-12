@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ms-mssql.mssql",
+        "ms-mssql.data-workspace-vscode",
+        "oracle.sql-developer"
+    ]
+}
